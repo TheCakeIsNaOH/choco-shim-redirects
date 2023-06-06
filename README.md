@@ -11,3 +11,4 @@ The packages are:
 - `cuninst-shim` to add the `cuninst` shim for `choco uninstall`
 - `cup-shim` to add the `cup` shim for `choco upgrade`
     
+There is a also the `choco-shim-redirects` metapackage available to conveniently install all of these packages at once.
