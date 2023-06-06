@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>choco-shim-redirects</id>
+    <version>1.0.0</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/choco-shim-redirects/tree/master/choco-shim-redirects</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
+    <title>Choco Shim Redirects (Unofficial)</title>
+    <authors>TheCakeIsNaOH</authors>
+    <projectUrl>https://github.com/TheCakeIsNaOH/choco-shim-redirects</projectUrl>
+    <!--<iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/choco-shim-redirects.png</iconUrl>-->
+    <!-- <copyright>Year Software Vendor</copyright> -->
+    <licenseUrl>https://github.com/TheCakeIsNaOH/choco-shim-redirects/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/TheCakeIsNaOH/choco-shim-redirects/tree/master/choco-shim-redirects</projectSourceUrl>
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <bugTrackerUrl>https://github.com/TheCakeIsNaOH/choco-shim-redirects/issues</bugTrackerUrl>
+    <tags>shim shimgen packaging</tags>
+    <summary>Replace the cup,cinst,cpack,etc shims</summary>
+    <description>This adds back the various redirect shims which were removed in Chocolatey CLI v1.0.0/v2.0.0
+    
+This is a metapackage, which takes dependencies on other packages to add back the shims:
+- `cpack-shim` to add the `cpack` shim for `choco pack`
+- `chocolatey-shim` to add the `chocolatey` shim for `choco`
+- `cinst-shim` to add the `cinst` shim for `choco install`
+- `clist-shim` to add the `clist` shim for `choco list`
+- `cpush-shim` to add the `cpush` shim for `choco push`
+- `cuninst-shim` to add the `cuninst` shim for `choco uninstall`
+- `cup-shim` to add the `cup` shim for `choco upgrade`
+
+If you only want selected shims, feel free to install those packages individually instead of using this one.</description>
+    <releaseNotes>1.0.0: Initial Release</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey" version="2.0.0" />
+      <dependency id="cpack-shim" version="1.0.0" />
+      <dependency id="chocolatey-shim" version="1.0.0" />
+      <dependency id="cinst-shim" version="1.0.0" />
+      <dependency id="clist-shim" version="1.0.0" />
+      <dependency id="cpush-shim" version="1.0.0" />
+      <dependency id="cuninst-shim" version="1.0.0" />
+      <dependency id="cup-shim" version="1.0.0" />
+    </dependencies>
+  </metadata>
+</package>
