@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>chocolatey-shim</id>
+    <version>1.0.0</version>
+    <packageSourceUrl>https://github.com/TheCakeIsNaOH/choco-shim-redirects/tree/master/chocolatey-shim</packageSourceUrl>
+    <owners>TheCakeIsNaOH</owners>
+    <title>chocolatey Redirect Shim (Unofficial)</title>
+    <authors>TheCakeIsNaOH</authors>
+    <projectUrl>https://github.com/TheCakeIsNaOH/choco-shim-redirects</projectUrl>
+    <!--<iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/chocolatey-shim.png</iconUrl>-->
+    <!-- <copyright>Year Software Vendor</copyright> -->
+    <licenseUrl>https://github.com/TheCakeIsNaOH/choco-shim-redirects/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/TheCakeIsNaOH/choco-shim-redirects/tree/master/chocolatey-shim</projectSourceUrl>
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <bugTrackerUrl>https://github.com/TheCakeIsNaOH/choco-shim-redirects/issues</bugTrackerUrl>
+    <tags>shim shimgen packaging</tags>
+    <summary>Replace the `chocolatey` shim for `choco`</summary>
+    <description>This adds back the `chocolatey` redirect shim which was removed in Chocolatey CLI v2.0.0
+The shim calls `choco.exe` with any additional arguments provided.</description>
+    <releaseNotes>1.0.0: Initial Release</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey" version="2.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
